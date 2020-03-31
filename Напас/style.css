@@ -1,0 +1,103 @@
+nav {
+    position: relative;
+    margin: 150px auto;  
+    width: 320px;
+    height: 320px;
+    /* border-radius: 50%; */
+    /* background: rgba(21, 36, 201, 0.185); */
+}
+
+.center {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    margin: 50% 50%;
+    z-index: 2;
+}
+
+
+div.links {
+    width: inherit;
+    padding: 0px;
+    margin: 0px;
+    height: inherit;
+    position: absolute;
+    list-style: none;
+    background: rgba(22, 5, 121, 0.363);
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow:  0 0 15px 3px rgb(4, 13, 90);
+}
+
+a {
+    position: absolute;
+    display: block;
+    height: 60%;
+    width: 60%;
+    background: rgba(38, 55, 133, 0.561);
+    transform-origin: 100% 0%;
+    top: 51%;
+    left: -8.5%;
+    box-shadow: inset 0 0 1px 0.1px black;
+    transition: background 1s;
+    text-decoration: none;
+}
+
+ 
+ 
+a:nth-child(1) {
+    background: linear-gradient(-145deg, rgb(55, 89, 153), rgb(255, 255, 255));
+    transform: skewY(30deg);  
+}
+
+a:nth-child(2) {
+    background: linear-gradient(255deg, rgb(55, 89, 153), rgb(255, 255, 255));
+    transform: rotate(120deg) skewY(30deg);
+}
+
+a:nth-child(3) {
+    background: linear-gradient(-115deg, rgb(55, 89, 153), rgb(255, 255, 255));
+    transform: rotate(-120deg) skewY(30deg);
+}
+
+.links div {
+    display: block;
+    width: 105px;
+    height: 100px;
+    font-family: Tahoma; 
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    color: rgb(19, 5, 82);
+    
+}
+
+.napas {
+    left: 33%;
+    top: 25%;
+    transform: skewY(-30deg);
+    background: url(icons.png) no-repeat 20% 0%;
+    
+}
+
+.lavanda {
+    left: 34%;
+    top: 22%;
+    transform: skewY(-30deg) rotate(-120deg);
+    background: url(icons.png) no-repeat 80% 0%;
+}
+
+.papiros {
+    text-align: center;
+    left: 30%;
+    top: 21%;
+    transform: skewY(-30deg) rotate(120deg);
+    background: url(icons.png) no-repeat 101% 0%;
+}
+
+a:hover {
+    background: rgba(50, 48, 172, 0.637);
+    box-shadow: inset 0 0 3px 0.3px 
+}   
