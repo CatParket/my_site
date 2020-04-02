@@ -1,0 +1,20 @@
+/* html {
+    height: 100%;
+    width: 100%;
+} */
+
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 1000px;
+    width: 80%;
+    min-width: 1000px;
+    box-shadow: inset 0px 0 40px 20px rgb(31, 29, 29), 
+                0px 0px 60px 30px rgba(165, 23, 10, 0.808); 
+    border: 6px solid rgba(78, 6, 6, 0.753);
+    background: url(berserk.jpeg) 0px -80px no-repeat fixed, #030303;
+    background-size: cover;
+    filter: grayscale(60%);
+}
+
