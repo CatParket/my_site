@@ -1,0 +1,169 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.elem {
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background-color: aqua; 
+    transition: 1s;
+}
+
+.checker-one:checked+.elem {
+    transform: rotate(1190deg);
+}
+
+
+
+.hole {   
+    position: absolute;
+    border-radius: 50%;
+    top: 49.2%;
+    left: 49.05%;
+    border: 3px solid rgb(3, 20, 31);
+    box-shadow:  0 0 2px 2px  rgba(0, 4, 7, 0.555);
+    z-index: 1;
+}
+
+
+
+
+.circle {
+    position: relative;
+    margin: 70px;
+    width: 300px;
+    height: 300px;
+    /* background-color: rgba(142, 166, 243, 0.281); */
+    border: 1px solid rgba(74, 160, 182, 0.294);
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px 8px rgb(0, 0, 0), 
+                      0 0 10px 10px rgba(63, 102, 128, 0.424) ;
+    overflow: hidden;
+}
+
+.sector {
+    position: absolute;
+    box-sizing: border-box;
+    width: 60%;
+    height: 30%;
+    top: 20.3%;
+    left: -10%;
+    /* border: 1px solid rgba(59, 31, 31, 0.815); */
+    box-shadow: inset 0 0 10px 1px,
+                      0 0 1px 0.5px black;
+    background-color: rgba(113, 164, 194, 0.548);
+    transform-origin: 100% 100%;
+    transform: skewX(60deg);
+    transition: 0.05s ease-out; 
+}
+
+.button-go {
+   position: absolute; 
+   padding: 10px;
+   margin: 10px;
+   left: 370px;
+   font-size: 12px;
+   font-weight: bold;
+   color: rgba(7, 52, 70, 0.89);
+   /* line-height: 1.2em; */
+   text-align: center;
+   border: 1px solid rgb(3, 92, 92);
+   border-radius: 20%/50%;
+   background-color: rgba(97, 187, 223, 0.459); 
+   box-shadow: inset 0 0 10px 2px rgba(26, 61, 71, 0.904),
+                     0 0 10px 2px rgba(13, 95, 143, 0.705);
+}
+
+.label{
+    display: inline;
+    vertical-align: bottom;
+}
+
+input {
+    display: none;
+}
+
+.rulet {
+    box-sizing: border-box;
+    position: absolute;
+    left: -340px;
+    top: 138px;
+    width: 180px;
+    height: 5px;
+    border: 0.5px solid rgb(15, 85, 3);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px rgba(39, 223, 7, 0.822);
+    background: rgba(158, 211, 142, 0.993);
+    transform: rotate(90deg);
+    transform-origin: 100% 50%;
+    z-index: 1;
+    transition: all 13s cubic-bezier(.39,-0.45,.14,1.01);
+}
+
+
+.button-go:hover {
+    background: rgba(38, 255, 0, 0.589);
+    border-color: rgba(13, 82, 25, 0.767);
+    box-shadow: inset 0 0 10px 2px rgba(26, 61, 71, 0.904),
+    0 0 10px 4px rgba(12, 119, 83, 0.883);
+    
+}
+
+.button-go:active  {
+   font-size: 13px;
+}
+
+.checker:checked~.rulet {
+    transform: rotate(4000deg);
+}
+
+.two {
+    transform:  rotate(30deg) skewX(60deg);
+}
+
+.three {
+    transform:  rotate(60deg) skewX(60deg);
+}
+
+.four {
+    transform:  rotate(90deg) skewX(60deg);
+}
+
+.five {
+    transform:  rotate(120deg) skewX(60deg);
+}
+
+.six {
+    transform:  rotate(150deg) skewX(60deg);
+}
+
+.seven {
+    transform:  rotate(180deg) skewX(60deg);
+}
+
+.eight {
+    transform:  rotate(210deg) skewX(60deg);
+}
+
+.nine {
+    transform:  rotate(240deg) skewX(60deg);
+}
+
+.ten {
+    transform:  rotate(270deg) skewX(60deg);
+}
+
+.eleven {
+    transform:  rotate(300deg) skewX(60deg);
+}
+
+.twelve {
+    transform:  rotate(330deg) skewX(60deg);
+}
+
+.sector:hover {
+    background: rgba(8, 189, 47, 0.575);
+}
